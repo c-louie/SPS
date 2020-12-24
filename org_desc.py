@@ -19,6 +19,8 @@ args = parser.parse_args()
 if args.org:
     admin = os.system('op core describe-org %s' % args.org)
     print(admin)
+else:
+    print("You need to add -o <orgId> as argument")
 
 
 

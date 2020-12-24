@@ -19,3 +19,5 @@ args = parser.parse_args()
 if args.org:
     acus = os.system('op core list-acus %s | ag -A3 "serialNumber" | ag -C1 "id"' % args.org)
     print(acus)
+else:
+    print("You need to add -o <orgId> as argument")

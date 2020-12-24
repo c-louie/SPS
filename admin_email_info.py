@@ -20,3 +20,5 @@ args = parser.parse_args()
 if args.org:
     admin = os.system('op core list-role-users %s 5 | ag -i "email"' % args.org)
     print(admin)
+else:
+    print("You need to add -o <orgId> as argument")

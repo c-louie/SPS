@@ -10,7 +10,7 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # Add long and short argument
-parser.add_argument("--org", "-o", help="set output width")
+parser.add_argument("--org", "-o", help="use --org or -o followed by orgId")
 
 # Read arguments from the command line
 args = parser.parse_args()
@@ -19,3 +19,5 @@ args = parser.parse_args()
 if args.org:
     org_info = os.system('op core describe-org %s | egrep -a "(name|parent)"| egrep -v "(Users|Lockdown Plans|Directory Sync|Sub-Orgs|Unlimited Entries|Unlimited Entries|Elevator I/O Boards|v20)"' % args.org)
     print(org_info)
+else:
+    print("You need to add -o <orgId> as argument")
