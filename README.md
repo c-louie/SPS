@@ -1,2 +1,2 @@
 # SPS
-Simple Python Scripts
+Simple Python Scripts for info via the opCLI
