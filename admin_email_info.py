@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-# I'm using python 3.8.x
 # Include standard modules
 import os
 import argparse
 
+# I'm using python 3.8.x
 # Script to get admin emails from org
 
 # Initiate the parser
