@@ -2,6 +2,8 @@
 
 # I'm using python 3.8.x
 # Include standard modules
+
+# Grabs serialNumberBrief, Name and ID
 import os
 import argparse
 
