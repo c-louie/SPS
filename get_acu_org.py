@@ -15,5 +15,5 @@ parser.add_argument("--org", "-o", help="use -o or --org followed by orgId")
 args = parser.parse_args()
 
 if args.org:
-    acus = os.system('op core list-acus %s | ag -C3 "serialNumber" | ag -C3 "id"' % args.org)
+    acus = os.system('op core list-acus %s | ag -A3 "serialNumber" | ag -C1 "id"' % args.org)
     print(acus)
