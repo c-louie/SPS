@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-# I'm using python 3.8.x
 # Include standard modules
-
-# Grabs serialNumberBrief, Name and ID
 import os
 import argparse
+
+# I'm using python 3.8.x
+# Grabs serialNumberBrief, Name and ID
 
 # Initiate the parser
 parser = argparse.ArgumentParser()
