@@ -11,7 +11,7 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # Add long and short argument
-parser.add_argument("--org", "-o", help="use --org or -o followed by orgId")
+parser.add_argument("--org", "-o", help="use --org or -o followed by orgId", required=True)
 
 # Read arguments from the command line
 args = parser.parse_args()
@@ -20,5 +20,5 @@ args = parser.parse_args()
 if args.org:
     admin = os.system('op core list-role-users %s 5 | ag -i "email"' % args.org)
     print(admin)
-else:
-    print("You need to add -o <orgId> as argument")
+# else:
+#     print("You need to add -o <orgId> as argument")

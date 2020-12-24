@@ -10,7 +10,7 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # Add long and short argument
-parser.add_argument("--email", "-m", help="use --email or -m followed by email address")
+parser.add_argument("--email", "-m", help="use --email or -m followed by email address", required=True)
 
 # Read arguments from the command line
 args = parser.parse_args()
@@ -19,7 +19,5 @@ args = parser.parse_args()
 if args.email:
     user_info = os.system('op mm list-identities --filter email:%s' % args.email)
     print(user_info)
-else:
-    print("You need to add -m <email> as argument")
 
 
