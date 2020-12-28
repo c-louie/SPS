@@ -1,31 +1,3 @@
-# #!/usr/bin/python
-# import os
-# print ("Shdow Monitor Alarm Info")
-# org=input ("What Org?: ")
-# acu=input ("What ACU?: ")
-
-# org_description='op core describe-org {} | egrep -a "(name|parent)"| egrep -v "(Users|Lockdown Plans|Directory Sync|Sub-Orgs|Unlimited Entries|Unlimited Entries|Elevator I/O Boards|v20)"'.format(org)
-
-# acu_info='op core list-acus {} --filter id:{} | egrep -a "name"| head -n 3'.format(org,acu)
-
-# last_alert='op core describe-acu {} {} --options withShadows > {}.json; jq .shadow.state.reported.nova.lastAlertedConnectivityStatus < {}.json; rm {}.json'.format(org,acu,org,org,org)
-
-# admin='op core list-role-users {} 5 | egrep -ai "email"'.format(org)
-# print
-# print ("ORG {} Description").format(org)
-# os.system(org_description)
-# print
-# print ("ACU {} info").format(acu)
-# os.system(acu_info)
-# print
-# print ("ORG {} Admin").format(org)
-# os.system(admin)
-# print
-# print ("Please check VPN")
-
-
-
-
 #!/usr/bin/env python3
 
 # Include standard modules
