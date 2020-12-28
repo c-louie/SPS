@@ -17,3 +17,5 @@ user_info - Uses MasterMode query to filter identities via email.
 get_acu_org - get a list of the ACUs, id, and serialNumberBrief for specific orgId.
 
 org_readers - get a list of readers for specific org
+
+shadow_info - will combo of above and also spit showdow info on acu to see if it is down
