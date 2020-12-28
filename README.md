@@ -18,4 +18,4 @@ get_acu_org - get a list of the ACUs, id, and serialNumberBrief for specific org
 
 org_readers - get a list of readers for specific org
 
-shadow_info - combo of above and also spit showdow info out on acu to see if it is down
+shadow_info - combo of above and also spit shadow info out on acu to see if it is down
