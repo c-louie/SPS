@@ -36,7 +36,7 @@ if args:
     print(acus)
 
 
-    os._exit(-1)
+    os._exit(0)
 
 
 
