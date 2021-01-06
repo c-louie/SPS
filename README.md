@@ -10,6 +10,8 @@ I also make use of 'ag' instead of grep. More info about that here:
 
 Scripts use command line arugments, can use --help for more information.
 
+abc - ABC Info Template for zendesk
+
 admin_email_info - Script to get admin emails from orgId.
 
 user_info - Uses MasterMode query to filter identities via email.
