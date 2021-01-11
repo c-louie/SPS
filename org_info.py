@@ -17,8 +17,10 @@ args = parser.parse_args()
 
 # Check for org
 if args.org:
-    org_info = os.system('op core describe-org %s | egrep -a "(name|parent)"| egrep -v "(Users|Lockdown Plans|Directory Sync|Sub-Orgs|Unlimited Entries|Unlimited Entries|Elevator I/O Boards|v20)"' % args.org)
-    print(org_info)
+    org_info = os.system('op core describe-org %s | egrep -a "(name|parent)"| egrep -v "(Users|Lockdown Plans|Directory Sync|Sub-Orgs| \
+        Unlimited Entries|Unlimited Entries|Elevator I/O Boards|v20)"' % args.org)
+    
+print(org_info)
 
 
 
