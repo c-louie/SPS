@@ -22,5 +22,7 @@ if args.org:
     
 print(org_info)
 
+os._exit(0)
+
 
 

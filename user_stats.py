@@ -49,3 +49,6 @@ if args:
     print("Groups for the user\n")
     group_info = os.system('op core list-user-groups %s %s | ag -A1 "id|name"' % (args.org, args.user))
     print(group_info)
+
+
+    os._exit(0)

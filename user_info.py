@@ -19,3 +19,6 @@ args = parser.parse_args()
 if args.email:
     user_info = os.system('op mm list-identities --filter email:%s' % args.email)
     print(user_info)
+
+    
+    os._exit(0) 

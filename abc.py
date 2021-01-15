@@ -23,4 +23,4 @@ if args:
 
 print(user_info)
 
-
+os._exit(0)

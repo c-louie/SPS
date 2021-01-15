@@ -19,3 +19,5 @@ args = parser.parse_args()
 if args.org:
     acus = os.system(' op core list-readers %s |ag -A3 "entries"' % args.org)
     print(acus)
+
+    os._exit(0)

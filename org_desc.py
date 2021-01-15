@@ -20,6 +20,8 @@ if args.org:
     admin = os.system('op core describe-org %s' % args.org)
     print(admin)
 
+    os._exit(0)
+
 
 
 
