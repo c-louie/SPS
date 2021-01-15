@@ -33,7 +33,7 @@ if args:
     print(admin)
 
     # List all ACUs associated with org
-    acus = os.system('op core list-acus %s | ag -A3 "serialNumber" | ag -C1 "id"' % args.org)
+    acus = os.system('op core list-acus %s | ag -C1 "id"' % args.org)
     print(acus)
 
 
