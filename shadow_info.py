@@ -24,6 +24,10 @@ if args:
     org_info = os.system('op core describe-org %s | ag -a "(name|parent)"| ag -v "(Users|Lockdown Plans|Directory Sync|Sub-Orgs|Unlimited Entries|Unlimited Entries|Elevator I/O Boards|v20)"' % args.org)
     print(org_info)
 
+    # List all ACUs associated with org
+    acus = os.system('op core list-acus %s | ag -A3 "serialNumber" | ag -C1 "id"' % args.org)
+    print(acus)
+
     # Check for ACU status
     shadow = os.system('op core describe-acu %s %s --options withShadows | jq .shadow.state.reported.nova.lastAlertedConnectivityStatus' % (args.org, args.acu))
     print(shadow)
@@ -32,9 +36,7 @@ if args:
     admin = os.system('op core list-role-users %s 5 | ag -i "email"' % args.org)
     print(admin)
 
-    # List all ACUs associated with org
-    acus = os.system('op core list-acus %s | ag -A3 "serialNumber" | ag -C1 "id"' % args.org)
-    print(acus)
+    
 
 
     os._exit(0)
