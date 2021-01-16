@@ -20,5 +20,3 @@ if args:
     acus = os.system('op core list-acus %s | ag -A3 "serialNumber" | ag -C1 "id"' % args.org)
 
 print(acus)
-
-os._exit(0)

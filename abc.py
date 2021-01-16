@@ -22,5 +22,3 @@ if args:
     ag -v "(fullName|isEmailVerified|namespace|nickname|Local|modelName)"' % (args.org, args.email))
 
 print(user_info)
-
-os._exit(0)
