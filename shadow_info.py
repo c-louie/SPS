@@ -5,7 +5,6 @@ import os
 import argparse
 
 # I'm using python 3.8.x
-# just a test script
 
 # Initiate the parser
 parser = argparse.ArgumentParser()
