@@ -16,8 +16,8 @@ admin_email_info - Get admin email address from orgId.
 
 user_info - Uses MasterMode query to filter identities via email.
 
-get_acu_org - a list of the ACUs, id, and serialNumberBrief for specific orgId.
+get_acu_org - A list of the ACUs, id, and serialNumberBrief for specific orgId.
 
-org_readers - a list of readers for specific org
+org_readers - A list of readers for specific org
 
-shadow_info - combo of above and also spit shadow info out on acu to see if it is down
+shadow_info - Combo of above and also spit shadow info out on acu to see if it is down
