@@ -8,6 +8,8 @@ You will need the opCLI installed to use any of these.
 I also make use of 'ag' instead of grep. More info about that here:
     https://github.com/ggreer/the_silver_searcher
 
+    You WILL need to install ag, or just modify the scripts to use grep.
+
 Scripts use command line arugments, can use --help for more information.
 
 abc - ABC Info Template for zendesk
