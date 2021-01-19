@@ -12,12 +12,12 @@ Scripts use command line arugments, can use --help for more information.
 
 abc - ABC Info Template for zendesk
 
-admin_email_info - Script to get admin emails from orgId.
+admin_email_info - Get admin email address from orgId.
 
 user_info - Uses MasterMode query to filter identities via email.
 
-get_acu_org - get a list of the ACUs, id, and serialNumberBrief for specific orgId.
+get_acu_org - a list of the ACUs, id, and serialNumberBrief for specific orgId.
 
-org_readers - get a list of readers for specific org
+org_readers - a list of readers for specific org
 
 shadow_info - combo of above and also spit shadow info out on acu to see if it is down
